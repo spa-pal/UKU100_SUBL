@@ -1,0 +1,9 @@
+.\EXE\uart1.o: uart1.c
+.\EXE\uart1.o: uart1.h
+.\EXE\uart1.o: C:\Keil\ARM\INC\Philips\LPC21XX.H
+.\EXE\uart1.o: main.h
+.\EXE\uart1.o: 25lc640.h
+.\EXE\uart1.o: eeprom_map.h
+.\EXE\uart1.o: control.h
+.\EXE\uart1.o: gran.h
+.\EXE\uart1.o: common_func.h

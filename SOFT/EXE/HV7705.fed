@@ -1,0 +1,96 @@
+;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Thu Feb 25 10:59:06 2016
+;VERSION 0.2
+;FILE 25lc640.o
+lc640_read <= USED 0
+lc640_read_long <= USED 0
+lc640_read_long_ptr <= USED 0
+lc640_read_str <= USED 0
+lc640_write <= USED 0
+lc640_write_long <= USED 0
+lc640_write_long_ptr <= USED 0
+;FILE ad7705_soft.o
+;FILE beep.o
+beep_drv <= USED 0
+;FILE common_func.o
+char2lcdbyx <= USED 0
+char2lcdhyx <= USED 0
+fl_simv <= USED 0
+int2lcd_m <= USED 0
+int2lcd_mm <= USED 0
+int2lcd_mmm <= USED 0
+int2lcdh <= USED 0
+int2lcdhyx <= USED 0
+long2lcd_mmm <= USED 0
+long2lcdhyx <= USED 0
+long2lcdyx <= USED 0
+long2lcdyx_mmm <= USED 0
+ptr_carry <= USED 0
+;FILE control.o
+av_out_hndl <= USED 0
+cntrl_drv <= USED 0
+current_integral_7_1000 <= USED 0
+current_integral_7_200 <= USED 0
+i_pov_drv <= USED 0
+kv_hndl <= USED 0
+out_drv <= USED 0
+p_pov_drv <= USED 0
+power_integral_7_200 <= USED 0
+start_chanel <= USED 0
+start_single_ring_process <= USED 0
+time_drv <= USED 0
+u_min_drv <= USED 0
+vent_drv <= USED 0
+;FILE gran.o
+gran_long <= USED 0
+;FILE graphic.o
+draw <= USED 0
+draw_a_segm <= USED 0
+draw_b_segm <= USED 0
+draw_c_segm <= USED 0
+draw_d_segm <= USED 0
+draw_e_segm <= USED 0
+draw_f_segm <= USED 0
+draw_g_segm <= USED 0
+draw_ptr <= USED 0
+draw_rectangle <= USED 0
+graphic_print <= USED 0
+graphic_print_text <= USED 0
+plot <= USED 0
+print_simb <= USED 0
+;FILE i2c.o
+i2c_ReadAcknowledge <= USED 0
+i2c_ReadByte <= USED 0
+i2c_Restart <= USED 0
+i2c_SendAcknowledge <= USED 0
+i2c_SendAddress <= USED 0
+i2c_SendByte <= USED 0
+i2c_Start <= USED 0
+i2c_Stop <= USED 0
+;FILE lcd_agm1232_uku100.o
+delay <= USED 0
+lcd_off <= USED 0
+ltstrobe <= USED 0
+status <= USED 0
+;FILE main.o
+;FILE memo.o
+;FILE pcf8563.o
+i2c_init_soft <= USED 0
+i2c_start_soft <= USED 0
+i2c_stop_soft <= USED 0
+pcf8563_read <= USED 0
+pcf8563_read_bytes_soft <= USED 0
+pcf8563_write <= USED 0
+;FILE ret.o
+ret_ind <= USED 0
+ret_ind_hndl <= USED 0
+ret_ind_sec <= USED 0
+;FILE timer.o
+;FILE tlv2542.o
+tlv2542_read <= USED 0
+tlv_drv <= USED 0
+;FILE uart1.o
+control_check1 <= USED 0
+getchar1 <= USED 0
+index_offset1 <= USED 0
+uart_out1 <= USED 0
+;FILE watchdog.o

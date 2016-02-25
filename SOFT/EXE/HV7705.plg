@@ -1,0 +1,680 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\UKU100_SUBL.uvproj
+Project File Date:  01/15/2014
+
+<h2>Output:</h2>
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(324): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1038): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1045): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1053): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1208): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1213): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1975): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(203): error:  #20: identifier "plazma_pal" is undefined
+uart1.c(248): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(243): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(392): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(409): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(199): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1977): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(248): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(243): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(392): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(409): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(199): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=27368 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1977): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(248): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(243): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(392): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(409): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(199): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=27384 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1977): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(248): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(243): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(392): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(409): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(199): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=27380 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1977): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(249): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(393): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(410): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=27404 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1978): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(249): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(393): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(410): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=27404 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1978): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(249): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(393): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(410): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=28288 RO-data=2256 RW-data=1716 ZI-data=3604  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(630): error:  #20: identifier "plazma_pal" is undefined
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1978): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(249): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(393): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(410): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(326): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1040): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1047): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1055): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1210): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1978): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(456): warning:  #177-D: variable "i" was declared but never referenced
+control.c(537): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(249): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(393): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(410): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=28264 RO-data=2256 RW-data=1712 ZI-data=3608  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 51 Warning(s).

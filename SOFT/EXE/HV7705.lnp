@@ -1,0 +1,5 @@
+--cpu ARM7TDMI ".\exe\startup.o" ".\exe\timer.o" ".\exe\watchdog.o" ".\exe\25lc640.o" ".\exe\tlv2542.o" ".\exe\pcf8563.o" ".\exe\i2c.o" ".\exe\ad7705_soft.o" ".\exe\lcd_agm1232_uku100.o" ".\exe\main.o" ".\exe\memo.o" ".\exe\common_func.o" ".\exe\control.o" ".\exe\gran.o" ".\exe\graphic.o" ".\exe\beep.o" ".\exe\simbols.o" ".\exe\ret.o" ".\exe\uart1.o" --library_type=microlib --feedback ".\EXE\HV7705.fed" 
+--strict --scatter ".\EXE\HV7705.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\HV7705.map" -o ".\EXE\HV7705.axf"

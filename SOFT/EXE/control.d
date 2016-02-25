@@ -1,0 +1,12 @@
+.\EXE\control.o: control.c
+.\EXE\control.o: control.h
+.\EXE\control.o: C:\Keil\ARM\INC\Philips\LPC21XX.H
+.\EXE\control.o: main.h
+.\EXE\control.o: gran.h
+.\EXE\control.o: 25lc640.h
+.\EXE\control.o: eeprom_map.h
+.\EXE\control.o: pcf8563.h
+.\EXE\control.o: tlv2542.h
+.\EXE\control.o: beep.h
+.\EXE\control.o: ad7705.h
+.\EXE\control.o: common_func.h

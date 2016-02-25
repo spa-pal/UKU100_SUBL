@@ -1,0 +1,37 @@
+*** Creating Trace Output File '..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\startup.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\timer.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\watchdog.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\25lc640.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\tlv2542.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\pcf8563.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\lcd_agm1232_uku202.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\i2c.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\ad7705_soft.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\main.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\memo.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\common_func.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\control.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\gran.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\graphic.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\beep.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\simbols.o"'
+### List of Objects: adding '"..\..\devices\uku100_7kv\soft\exe\ret.o"'
+### ADS-LD Command completed:
+--device DARMP "..\..\devices\uku100_7kv\soft\exe\startup.o" "..\..\devices\uku100_7kv\soft\exe\timer.o" "..\..\devices\uku100_7kv\soft\exe\watchdog.o" "..\..\devices\uku100_7kv\soft\exe\25lc640.o" "..\..\devices\uku100_7kv\soft\exe\tlv2542.o" "..\..\devices\uku100_7kv\soft\exe\pcf8563.o" "..\..\devices\uku100_7kv\soft\exe\lcd_agm1232_uku202.o" "..\..\devices\uku100_7kv\soft\exe\i2c.o" "..\..\devices\uku100_7kv\soft\exe\ad7705_soft.o" "..\..\devices\uku100_7kv\soft\exe\main.o" "..\..\devices\uku100_7kv\soft\exe\memo.o" "..\..\devices\uku100_7kv\soft\exe\common_func.o" "..\..\devices\uku100_7kv\soft\exe\control.o" "..\..\devices\uku100_7kv\soft\exe\gran.o" "..\..\devices\uku100_7kv\soft\exe\graphic.o" "..\..\devices\uku100_7kv\soft\exe\beep.o" "..\..\devices\uku100_7kv\soft\exe\simbols.o" "..\..\devices\uku100_7kv\soft\exe\ret.o" --library_type=microlib --feedback "..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.fed" 
+--strict --scatter "..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\HV2542.map" -o "..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.axf'
+### ADS-LD Command File: '..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.lnp', Handle=0x000000D0
+### Writing '.lnp' file
+### ADS-LD Command file '..\..\DEVICES\UKU100_7kV\SOFT\EXE\HV2542.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
