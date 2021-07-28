@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Thu Feb 25 10:59:06 2016
+;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Wed Jul 28 10:05:20 2021
 ;VERSION 0.2
 ;FILE 25lc640.o
 lc640_read <= USED 0
@@ -13,7 +13,6 @@ lc640_write_long_ptr <= USED 0
 beep_drv <= USED 0
 ;FILE common_func.o
 char2lcdbyx <= USED 0
-char2lcdhyx <= USED 0
 fl_simv <= USED 0
 int2lcd_m <= USED 0
 int2lcd_mm <= USED 0

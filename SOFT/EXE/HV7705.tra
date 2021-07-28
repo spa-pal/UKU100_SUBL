@@ -29,7 +29,7 @@
 ### ADS-LD Output File: '.\EXE\HV7705.axf'
 ### ADS-LD Command File: '.\EXE\HV7705.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\EXE\HV7705.lnp', Handle=0x000000F4
+### Creating CmdFile '.\EXE\HV7705.lnp', Handle=0x00000994
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\EXE\HV7705.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

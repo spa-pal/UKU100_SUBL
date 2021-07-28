@@ -19,7 +19,7 @@
 #include "ad7705_soft.h"
 #include "uart1.h"
 
-const char*  name_of_blok="ИПС-1200-220В/7кВ-1А";
+const char*  name_of_blok="ИПС-1000-220В/12В-55А";
 
 //-----------------------------------------------
 //Таймер
@@ -290,6 +290,10 @@ const char rele_stat_const[8]={1,0,3,2,5,7,6,4};
 short plazma_pwm;
 
 //char plazma_pal;
+
+//**********************************************
+//Расшифровка приходящих данных
+char strIng[20];
 
 //-----------------------------------------------
 void bitmap_hndl(void)
@@ -888,20 +892,69 @@ else if((ind==iSet_prl)||(ind==iK_prl)||(ind==iProg_prl))
 	}
 else if(ind==iDeb)
 	{
+	if(sub_ind1==0)
+		{
+		bgnd_par(	"*                   ",
+					"                    ",
+					"                    ",
+					"                    ");
+		int2lcdyx(ch_pending_start[0],0,2,0);
+		int2lcdyx(ch_pending_start[1],0,4,0);
+		int2lcdyx(ch_pending_start[2],0,6,0);
+		int2lcdyx(ch_pending_start[3],0,8,0);
+		int2lcdyx(ch_pending_start[4],0,10,0);
+		int2lcdyx(ch_pending_start[5],0,12,0);
+		int2lcdyx(ch_pending_start[6],0,14,0);
+		int2lcdyx(ch_pending_start[7],0,16,0);
+		}
+	else if(sub_ind1==1)
+		{
+		bgnd_par(	"&                   ",
+					"                    ",
+					"                    ",
+					"                    ");
 
-	bgnd_par(	"*                   ",
-				"                    ",
-				"                    ",
-				"                    ");
-	int2lcdyx(ch_pending_start[0],0,2,0);
-	int2lcdyx(ch_pending_start[1],0,4,0);
-	int2lcdyx(ch_pending_start[2],0,6,0);
-	int2lcdyx(ch_pending_start[3],0,8,0);
-	int2lcdyx(ch_pending_start[4],0,10,0);
-	int2lcdyx(ch_pending_start[5],0,12,0);
-	int2lcdyx(ch_pending_start[6],0,14,0);
-	int2lcdyx(ch_pending_start[7],0,16,0);
+		char2lcdhyx(UIB1[0],0,2);
+		char2lcdhyx(UIB1[1],1,2);
+		char2lcdhyx(UIB1[2],2,2);
+		char2lcdhyx(UIB1[3],3,2);
+		char2lcdhyx(UIB1[4],0,6);
+		char2lcdhyx(UIB1[5],1,6);
+		char2lcdhyx(UIB1[6],2,6);
+		char2lcdhyx(UIB1[7],3,6);
+		char2lcdhyx(UIB1[8],0,10);
+		char2lcdhyx(UIB1[9],1,10);
+		char2lcdhyx(UIB1[10],2,10);
+		char2lcdhyx(UIB1[11],3,10);
+		char2lcdhyx(UIB1[12],0,14);
+		char2lcdhyx(UIB1[13],1,14);
+		char2lcdhyx(UIB1[14],2,14);
+		char2lcdhyx(UIB1[15],3,14);
+		}
+	else if(sub_ind1==2)
+		{
+		bgnd_par(	"%                   ",
+					"                    ",
+					"                    ",
+					"                    ");
 
+		char2lcdhyx(strIng[0],0,2);
+		char2lcdhyx(strIng[1],1,2);
+		char2lcdhyx(strIng[2],2,2);
+		char2lcdhyx(strIng[3],3,2);
+		char2lcdhyx(strIng[4],0,6);
+		char2lcdhyx(strIng[5],1,6);
+		char2lcdhyx(strIng[6],2,6);
+		char2lcdhyx(strIng[7],3,6);
+		char2lcdhyx(strIng[8],0,10);
+		char2lcdhyx(strIng[9],1,10);
+		char2lcdhyx(strIng[10],2,10);
+		char2lcdhyx(strIng[11],3,10);
+		char2lcdhyx(strIng[12],0,14);
+		char2lcdhyx(strIng[13],1,14);
+		char2lcdhyx(strIng[14],2,14);
+		char2lcdhyx(strIng[15],3,14);
+		}
 /*	int2lcdyx(adc_buff_[0],0,4,0);
 	int2lcdyx(adc_buff_[1],1,4,0);
 	int2lcdyx(adc_buff_[2],2,4,0);
@@ -1872,7 +1925,20 @@ else if(ind==iSM)
 	tree_down(0,0);
 	}
 
-	
+else if(ind==iDeb)
+	{
+	ret(50);
+	if(but==butR)
+		{
+		sub_ind1++;
+		gran_ring_char(&sub_ind,0,2);
+		}
+	else if(but==butL)
+		{
+		sub_ind1--;
+		gran_ring_char(&sub_ind,0,2);
+		}	
+	}
 but_an_end:
 n_but=0;
 }

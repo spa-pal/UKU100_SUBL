@@ -316,3 +316,8 @@ extern signed short proc_rep;
  
 extern short plazma_pwm;
 //extern char plazma_pal;
+
+//**********************************************
+//Расшифровка приходящих данных
+
+extern char strIng[20];

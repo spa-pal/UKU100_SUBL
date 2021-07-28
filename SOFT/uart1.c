@@ -238,6 +238,136 @@ if((UIB1[0]=='Z'))
 				}
 			}
 
+	 	else if(UIB1[3]=='3')         //установка параметра
+			{
+			signed short tempSS;
+			char temp;
+			unsigned char *s;
+
+			if(UIB1[4]=='1')         //первый канал
+				{
+				if(UIB1[5]=='U')    //”становка начального напр€жени€ 
+                         {
+                         char i,ii;
+                         char _strIng[20]; 
+						 i=5;
+						 ii=strspn(UIB,'\r');
+
+  
+  //unsigned char buf [] = "This is a test";
+
+  						//	ii = strpos (UIB, 't');
+						 
+						 //s = strchr(&UIB1[6],0x0d);
+
+						 
+						                     
+                       /* for(i=6;i<25;i++)
+                              {
+                              if(UIB1[i]==0x0d)
+                                   {
+                                   ii=i-1;
+                                   break;
+                                   }
+							  
+                              }	*/
+						//plazma_ppp=ii;
+                        memcpy(strIng, &UIB1[6], ii-5);
+						strIng[ii-5]=0; 
+                        
+						/* tempSS=0;
+                         for(i=ii;i>5;i--)
+                              {
+                              tempSS+=((UIB1[i]-0x30)*(pow(10,(-(i-ii)))));
+                              }
+
+                         U1=tempSS;
+                         gran(&U1,10,16000);   */
+
+						tempSS=(signed short)atoi(strIng);
+     			     	//lc640_write_int(EE_U_MAX,tempSS);
+					//	UIB1[3]=0; 
+                        
+						
+						
+						memo_out0[0]='!';
+				     	memo_out0[1]=adrh;
+				     	memo_out0[2]=adrl;
+				     	memo_out0[3]='3';
+				     	memo_out0[4]=0x0d;
+				     	uart_out_adr1(memo_out0,5);
+
+                         }
+				if(UIB1[5]=='I')    //”становка начального напр€жени€ 
+                	{
+                    char i,ii;
+                    char strIng[20]; 
+					i=5;
+                    
+					for(i=6;i<25;i++)
+                    	{
+                        if(UIB1[i]==0x0d)
+                        	{
+                            ii=i-1;
+                            break;
+                            }
+							  
+                        }	
+					//plazma_ppp=ii;
+                   	memcpy(strIng, &UIB1[6], ii-5);
+					strIng[ii-5]=0; 
+
+					tempSS=(signed short)atoi(strIng);
+//     			    lc640_write_int(EE_I_MAX,tempSS);
+					//	UIB1[3]=0; 
+                        
+						
+						
+					memo_out0[0]='!';
+				    memo_out0[1]=adrh;
+				    memo_out0[2]=adrl;
+				   	memo_out0[3]='3';
+				    memo_out0[4]=0x0d;
+				    uart_out_adr1(memo_out0,5);
+
+                    }	
+				if(UIB1[5]=='R')    //”становка начального напр€жени€ 
+                	{
+                    char i,ii;
+                    char strIng[20]; 
+					i=5;
+                    
+					for(i=6;i<25;i++)
+                    	{
+                        if(UIB1[i]==0x0d)
+                        	{
+                            ii=i-1;
+                            break;
+                            }
+							  
+                        }	
+//					plazma_ppp=ii;
+                   	memcpy(strIng, &UIB1[6], ii-5);
+					strIng[ii-5]=0; 
+
+					tempSS=(signed short)(atoi(strIng)/10);
+//     			    lc640_write_int(EE_I_VK,tempSS);
+					//	UIB1[3]=0; 
+                        
+						
+						
+					memo_out0[0]='!';
+				    memo_out0[1]=adrh;
+				    memo_out0[2]=adrl;
+				   	memo_out0[3]='3';
+				    memo_out0[4]=0x0d;
+				    uart_out_adr1(memo_out0,5);
+
+                    }			
+				}
+
+			}
+
 	 	else if((UIB1[3]=='4')/*&&(UIB1[5]==0x0d)*/)
 			{
 			signed short tempSS;

@@ -307,10 +307,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>8</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>724</TopLine>
-      <CurrentLine>724</CurrentLine>
+      <TopLine>2091</TopLine>
+      <CurrentLine>2114</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -349,10 +349,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>132</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>670</TopLine>
-      <CurrentLine>684</CurrentLine>
+      <TopLine>307</TopLine>
+      <CurrentLine>334</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
       <FilenameWithoutPath>control.c</FilenameWithoutPath>
@@ -433,10 +433,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>4</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>80</TopLine>
-      <CurrentLine>100</CurrentLine>
+      <TopLine>209</TopLine>
+      <CurrentLine>209</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\uart1.c</PathWithFileName>
       <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
@@ -444,59 +444,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\control.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>4</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\eeprom_map.h</PathWithFilename>
-    <TopLine>78</TopLine>
-    <CurrentLine>98</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\main.h</PathWithFilename>
+    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</PathWithFilename>
     <TopLine>45</TopLine>
     <CurrentLine>65</CurrentLine>
     <Constant>0</Constant>
@@ -522,9 +470,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\eeprom_map.c</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\eeprom_map.h</PathWithFilename>
+    <TopLine>78</TopLine>
+    <CurrentLine>98</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -548,7 +496,33 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\uart1.h</PathWithFilename>
+    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\control.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>4</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\uart1.h</PathWithFilename>
     <TopLine>11</TopLine>
     <CurrentLine>31</CurrentLine>
     <Constant>0</Constant>
@@ -578,7 +552,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>4</ActiveTab>
       <Documents>
         <Doc>
           <Name>uart1.h</Name>
@@ -587,58 +561,10 @@
           <CurrentLine>31</CurrentLine>
         </Doc>
         <Doc>
-          <Name>E:\Users\Pal\DEVICES\UKU100_SUBL_dev_\SOFT\2\eeprom_map.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\gran.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>19</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>724</TopLine>
-          <CurrentLine>724</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>main.h</Name>
-          <ColumnNumber>2</ColumnNumber>
-          <TopLine>45</TopLine>
-          <CurrentLine>65</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\common_func.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>643</TopLine>
-          <CurrentLine>656</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>eeprom_map.h</Name>
-          <ColumnNumber>42</ColumnNumber>
-          <TopLine>78</TopLine>
-          <CurrentLine>98</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\memo.c</Name>
-          <ColumnNumber>45</ColumnNumber>
-          <TopLine>23</TopLine>
-          <CurrentLine>35</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\uart1.c</Name>
-          <ColumnNumber>4</ColumnNumber>
-          <TopLine>80</TopLine>
-          <CurrentLine>100</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\control.c</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>670</TopLine>
-          <CurrentLine>684</CurrentLine>
+          <Name>.\ad7705_soft.c</Name>
+          <ColumnNumber>1</ColumnNumber>
+          <TopLine>144</TopLine>
+          <CurrentLine>156</CurrentLine>
         </Doc>
         <Doc>
           <Name>control.h</Name>
@@ -647,10 +573,52 @@
           <CurrentLine>4</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\ad7705_soft.c</Name>
-          <ColumnNumber>1</ColumnNumber>
-          <TopLine>144</TopLine>
-          <CurrentLine>156</CurrentLine>
+          <Name>.\control.c</Name>
+          <ColumnNumber>132</ColumnNumber>
+          <TopLine>307</TopLine>
+          <CurrentLine>334</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\uart1.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>209</TopLine>
+          <CurrentLine>209</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\memo.c</Name>
+          <ColumnNumber>45</ColumnNumber>
+          <TopLine>23</TopLine>
+          <CurrentLine>35</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>eeprom_map.h</Name>
+          <ColumnNumber>42</ColumnNumber>
+          <TopLine>78</TopLine>
+          <CurrentLine>98</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\common_func.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>643</TopLine>
+          <CurrentLine>656</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>main.h</Name>
+          <ColumnNumber>2</ColumnNumber>
+          <TopLine>45</TopLine>
+          <CurrentLine>65</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\main.c</Name>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>2091</TopLine>
+          <CurrentLine>2114</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\gran.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>19</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
