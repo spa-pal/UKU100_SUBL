@@ -146,7 +146,7 @@ __irq void uart1_interrupt(void)
 {
 char status,u1iir,data;
 
-//plazma++;
+plazma_a++;
 
 status=U1LSR;
 u1iir=U1IIR;
@@ -238,134 +238,442 @@ if((UIB1[0]=='Z'))
 				}
 			}
 
-	 	else if(UIB1[3]=='3')         //установка параметра
+	 	else if(UIB1[3]=='1')         //программирование каналов
 			{
 			signed short tempSS;
 			char temp;
 			unsigned char *s;
-
-			if(UIB1[4]=='1')         //первый канал
+			char answer_code='!';
+			
+			if(UIB1[4]=='C')	//старт в режиме алгоритма 1    
 				{
-				if(UIB1[5]=='U')    //Установка начального напряжения 
-                         {
-                         char i,ii;
-                         char _strIng[20]; 
-						 i=5;
-						 ii=strspn(UIB,'\r');
+				if((UIB1[5]=='1')||(UIB1[5]=='2')||(UIB1[5]=='3')||(UIB1[5]=='4')||(UIB1[5]=='5')||(UIB1[5]=='6')||(UIB1[5]=='7')||(UIB1[5]=='8'))	//один из каналов
+					{
+					chNumber=(short)UIB1[5]-49;
 
-  
-  //unsigned char buf [] = "This is a test";
-
-  						//	ii = strpos (UIB, 't');
-						 
-						 //s = strchr(&UIB1[6],0x0d);
-
-						 
-						                     
-                       /* for(i=6;i<25;i++)
-                              {
-                              if(UIB1[i]==0x0d)
-                                   {
-                                   ii=i-1;
-                                   break;
-                                   }
-							  
-                              }	*/
-						//plazma_ppp=ii;
-                        memcpy(strIng, &UIB1[6], ii-5);
-						strIng[ii-5]=0; 
-                        
-						/* tempSS=0;
-                         for(i=ii;i>5;i--)
-                              {
-                              tempSS+=((UIB1[i]-0x30)*(pow(10,(-(i-ii)))));
-                              }
-
-                         U1=tempSS;
-                         gran(&U1,10,16000);   */
-
-						tempSS=(signed short)atoi(strIng);
-     			     	//lc640_write_int(EE_U_MAX,tempSS);
-					//	UIB1[3]=0; 
-                        
-						
-						
-						memo_out0[0]='!';
-				     	memo_out0[1]=adrh;
-				     	memo_out0[2]=adrl;
-				     	memo_out0[3]='3';
-				     	memo_out0[4]=0x0d;
-				     	uart_out_adr1(memo_out0,5);
-
-                         }
-				if(UIB1[5]=='I')    //Установка начального напряжения 
-                	{
-                    char i,ii;
-                    char strIng[20]; 
-					i=5;
-                    
-					for(i=6;i<25;i++)
-                    	{
-                        if(UIB1[i]==0x0d)
-                        	{
-                            ii=i-1;
-                            break;
-                            }
-							  
-                        }	
-					//plazma_ppp=ii;
-                   	memcpy(strIng, &UIB1[6], ii-5);
-					strIng[ii-5]=0; 
-
-					tempSS=(signed short)atoi(strIng);
-//     			    lc640_write_int(EE_I_MAX,tempSS);
-					//	UIB1[3]=0; 
-                        
-						
-						
-					memo_out0[0]='!';
-				    memo_out0[1]=adrh;
-				    memo_out0[2]=adrl;
-				   	memo_out0[3]='3';
-				    memo_out0[4]=0x0d;
-				    uart_out_adr1(memo_out0,5);
-
-                    }	
-				if(UIB1[5]=='R')    //Установка начального напряжения 
-                	{
-                    char i,ii;
-                    char strIng[20]; 
-					i=5;
-                    
-					for(i=6;i<25;i++)
-                    	{
-                        if(UIB1[i]==0x0d)
-                        	{
-                            ii=i-1;
-                            break;
-                            }
-							  
-                        }	
-//					plazma_ppp=ii;
-                   	memcpy(strIng, &UIB1[6], ii-5);
-					strIng[ii-5]=0; 
-
-					tempSS=(signed short)(atoi(strIng)/10);
-//     			    lc640_write_int(EE_I_VK,tempSS);
-					//	UIB1[3]=0; 
-                        
-						
-						
-					memo_out0[0]='!';
-				    memo_out0[1]=adrh;
-				    memo_out0[2]=adrl;
-				   	memo_out0[3]='3';
-				    memo_out0[4]=0x0d;
-				    uart_out_adr1(memo_out0,5);
-
-                    }			
+				
+					if(!start_chanel_num(chNumber))
+						{
+						answer_code='D';
+						}
+					}
 				}
+			else if(UIB1[4]=='R')	//старт в режиме алгоритма 2    
+				{
+				if(!((!Konset[0])&&(!Konset[1])&&(!Konset[2])&&(!Konset[3])&&(!Konset[4])&&(!Konset[5])&&(!Konset[6])&&(!Konset[7])))
+					{
+					start_ALG2();
+					}
+				else
+					{
+					answer_code='D';
+					}
 
+				}
+			else if(UIB1[4]=='S')	//стоп    
+				{
+				stop_process();
+				wrk_pause_time=0;
+				}
+			else 
+				{
+				answer_code='C';
+				}
+			memo_out0[0]=answer_code;
+			memo_out0[1]=adrh;
+			memo_out0[2]=adrl;
+			memo_out0[3]='1';
+			memo_out0[4]=0x0d;
+			uart_out_adr1(memo_out0,5);	
+			}
+
+	 	else if(UIB1[3]=='2')         //установки
+			{
+			signed short tempSS;
+			char temp;
+			unsigned char *s;
+			char answer_code='!';
+
+ 				if((UIB1[4]=='A')&&(UIB1[5]=='L'))    //Алгоритм работы
+					{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData==1)||(setData==2))
+							{
+							lc640_write_int(EE_ALG_MODE,setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+				else if(UIB1[4]=='Z')    //Задержка переключения каналов 
+                	{
+					strIng_ptr_start=5;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=1)&&(setData<=500))
+							{
+							lc640_write_int(EE_TZPK,setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+                    }
+						
+				else if(UIB1[4]=='R')    //Количество повторов для алгоритма 2 
+                	{
+					strIng_ptr_start=5;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=1)&&(setData<=99))
+							{
+							lc640_write_int(EE_REP_NUM_ALG_2,setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+                    }	
+				else if((UIB1[4]=='A')&&(UIB1[5]=='D'))    //Адрес 
+					{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=	  (signed short)strtol(strIng, 0, 16);	 // (signed short)atoi(strIng);
+						
+						if((setData>=16)&&(setData<=80))
+							{
+							lc640_write_int(EE_ADR,setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+
+				else if((UIB1[4]=='B')&&(UIB1[5]=='R'))    //Адрес 
+					{
+					int setData_;
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+					
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData_=(int)atoi(strIng);
+						
+						if((setData_==9600)||(setData_==19200)||(setData_==38400)||(setData_==57600)||(setData_==115200))
+							{
+							lc640_write_int(EE_BAUDRATE,(signed short)(setData_/100));
+							uart1_init();
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+																	
+				else 
+					{
+					answer_code='?';
+					}								
+
+			memo_out0[0]=answer_code;
+			memo_out0[1]=adrh;
+			memo_out0[2]=adrl;
+			memo_out0[3]='2';
+			memo_out0[4]=0x0d;
+			uart_out_adr1(memo_out0,5);	
+			}
+
+	 	else if(UIB1[3]=='3')         //программирование каналов
+			{
+			signed short tempSS;
+			char temp;
+			unsigned char *s;
+			char answer_code='!';
+
+			if((UIB1[4]=='1')||(UIB1[4]=='2')||(UIB1[4]=='3')||(UIB1[4]=='4')||(UIB1[4]=='5')||(UIB1[4]=='6')||(UIB1[4]=='7')||(UIB1[4]=='8'))	//один из каналов
+				{
+				chNumber=(short)UIB1[4]-49;
+
+				if(UIB1[5]=='I')    //Установка тока 
+					{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+
+					if(strIng_ptr_komma==255) strIng[strIng_len]='0';
+					else
+						{
+						if(strIng_len-strIng_ptr_komma>=3)
+							{
+							answer_code='D';
+							}
+						else
+							{
+							strcpy(&strIng[strIng_ptr_komma],&strIng[strIng_ptr_komma+1]);
+							}
+						} 
+
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=250)&&(setData<=550))
+							{
+							lc640_write_int(ADR_EE_I_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+				else if((UIB1[5]=='T')&&(UIB1[6]=='p'))   //Установка времени подьема 
+					{
+					strIng_ptr_start=7;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=5)&&(setData<=60))
+							{
+							lc640_write_int(ADR_EE_TP_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+
+				else if((UIB1[5]=='T')&&(UIB1[6]=='v'))   //Установка времени выдержки 
+					{
+					strIng_ptr_start=7;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=1)&&(setData<=200))
+							{
+							lc640_write_int(ADR_EE_TV_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+					}
+
+				else if(UIB1[5]=='R')    //Установка количества повторов 
+                	{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=1)&&(setData<=99))
+							{
+							lc640_write_int(ADR_EE_AVT_REP_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+                    }	
+				else if(UIB1[5]=='P')    //Установка периода повторов 
+                	{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData>=((Tvset[chNumber]+Tpset[chNumber]+59)/60))&&(setData<=1440))
+							{
+							lc640_write_int(ADR_EE_AVT_PER_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+                    }
+
+				else if(UIB1[5]=='E')    //Включение/выключение канала в список работающик (активация) 
+                	{
+					strIng_ptr_start=6;
+					strIng_ptr_end=pal_strspn(UIB1,'\r');
+					strIng_len=strIng_ptr_end-strIng_ptr_start;
+ 					memcpy(strIng, &UIB1[strIng_ptr_start], strIng_len);
+					strIng[strIng_len]=0;
+					strIng[strIng_len+1]=0;
+ 
+					strIng_ptr_komma=pal_strspn(strIng,'.');
+					
+					if(strIng_ptr_komma!=255) 
+						{
+						answer_code='D';
+						} 
+					if(answer_code!='D') 
+						{
+						setData=(signed short)atoi(strIng);
+						
+						if((setData==0)||(setData==1))
+							{
+							lc640_write_int(ADR_EE_KON_SET[chNumber],setData);
+							}
+						else 
+							{
+							answer_code='V';
+							}
+						}
+                    }
+												
+				else 
+					{
+					answer_code='?';
+					}								
+				}
+			else if(UIB1[4]=='A') //Установка алгоритма работы
+				{
+				}
+			else 
+				{
+				answer_code='C';
+				}
+			memo_out0[0]=answer_code;
+			memo_out0[1]=adrh;
+			memo_out0[2]=adrl;
+			memo_out0[3]='3';
+			memo_out0[4]=0x0d;
+			uart_out_adr1(memo_out0,5);	
 			}
 
 	 	else if((UIB1[3]=='4')/*&&(UIB1[5]==0x0d)*/)
@@ -393,164 +701,58 @@ if((UIB1[0]=='Z'))
 					}
 				memo_out0[5+i]=0x0d;*/
 				memo_out0[6]='+';
-				memo_out0[7]='0'+ (U/10000);
-				tempSS=U%10000;
+				memo_out0[7]='0'+ (Ui/1000);
+				tempSS=Ui%1000;
 
-				memo_out0[8]='0'+ (tempSS/1000);
-				tempSS=tempSS%1000;
-
-				memo_out0[9]='0'+ (tempSS/100);
+				memo_out0[8]='0'+ (tempSS/100);
 				tempSS=tempSS%100;
-
-				memo_out0[10]='0'+ (tempSS/10);
+				
+				memo_out0[9]='0'+ (tempSS/10);
 				tempSS=tempSS%10;
+
+				memo_out0[10]=',';
+
 
 				memo_out0[11]='0'+ tempSS;
 				
-				tempSS=Ires/100;
-
-
+				tempSS=Ii;
+				
 				memo_out0[12]='+';
 
-				memo_out0[13]='0'+ (tempSS/10000);
-				tempSS=tempSS%10000;
-
-				memo_out0[14]='0'+ (tempSS/1000);
+				memo_out0[13]='0'+ (tempSS/1000);
 				tempSS=tempSS%1000;
 
-				memo_out0[15]='0'+ (tempSS/100);
+				memo_out0[14]='0'+ (tempSS/100);
 				tempSS=tempSS%100;
+
+				memo_out0[15]='0'+ (tempSS/10);
+				tempSS=tempSS%10;
 				
 				memo_out0[16]=',';
 				
-				memo_out0[17]='0'+ (tempSS/10);
-				tempSS=tempSS%10;
-				
-				memo_out0[18]='0'+ tempSS;
-				
-				memo_out0[19]=0x0d;
-
-				uart_out_adr1(memo_out0,20);
-				//uart_out1(3,1,2,3,4,5,6);
-				}
-
-/*			else if(UIB1[4]=='2') //считывание начального и конечного напряжения
-				{
-				char i;
-				memo_out0[0]='!';
-				memo_out0[1]=adrh;
-				memo_out0[2]=adrl;
-				memo_out0[3]='4';
-				memo_out0[4]='>';
-				memo_out0[5]='2';
-
-				memo_out0[6]='+';
-				memo_out0[7]='0'+ (U1/10000);
-				tempSS=U1%10000;
-
-				memo_out0[8]='0'+ (tempSS/1000);
-				tempSS=tempSS%1000;
-
-				memo_out0[9]='0'+ (tempSS/100);
-				tempSS=tempSS%100;
-
-				memo_out0[10]='0'+ (tempSS/10);
-				tempSS=tempSS%10;
-
-				memo_out0[11]='0'+ tempSS;
-				
-
-				memo_out0[12]='+';
-				memo_out0[13]='0'+ (U2/10000);
-				tempSS=U2%10000;
-
-				memo_out0[14]='0'+ (tempSS/1000);
-				tempSS=tempSS%1000;
-
-				memo_out0[15]='0'+ (tempSS/100);
-				tempSS=tempSS%100;
-
-				memo_out0[16]='0'+ (tempSS/10);
-				tempSS=tempSS%10;
-
 				memo_out0[17]='0'+ tempSS;
-
-			
+				
 				memo_out0[18]=0x0d;
 
 				uart_out_adr1(memo_out0,19);
+				//uart_out1(3,1,2,3,4,5,6);
+				}
 
-				}*/
-
-/*			else if(UIB1[4]=='3') //считывание длительности процесса
+			else 
 				{
-				char i;
-				plazma++;
-				memo_out0[0]='!';
+				memo_out0[0]='?';
 				memo_out0[1]=adrh;
 				memo_out0[2]=adrl;
 				memo_out0[3]='4';
-				memo_out0[4]='>';
-				memo_out0[5]='3';
-
-				memo_out0[6]='+';
-				memo_out0[7]='0'+ (T/100);
-				tempSS=T%100;
-
-				memo_out0[8]='0'+ (tempSS/10);
-				tempSS=tempSS%10;
-
-				memo_out0[9]='0'+ tempSS;
-
-                    memo_out0[10]='+';
-				memo_out0[11]='0';
-				
-				memo_out0[12]=0x0d;
-
-				uart_out_adr1(memo_out0,13);
-				//uart_out1(3,1,2,3,4,5,6);
+				memo_out0[4]=0x0d;
+				uart_out_adr1(memo_out0,5);
 				}
-			 */
 			}
-
-
-
-
-	 	else if((UIB1[3]=='1')&&(UIB1[5]==0x0d))    //включение-выключение
+	 	else if((UIB1[3]=='R')/*&&(UIB1[5]==0x0d)*/)
 			{
-			if(UIB1[4]=='E')
-				{
-				char i;
-
-				wrk_state=wrkON;
-		///		lc640_write_int(EE_WRK_STAT,wrk_state);
-				wrk_cnt=0;
-
-				memo_out0[0]='!';
-				memo_out0[1]=adrh;
-				memo_out0[2]=adrl;
-				memo_out0[3]='1';
-				memo_out0[4]=0x0d;
-				uart_out_adr1(memo_out0,5);
-				
-				}
-
-			else if(UIB1[4]=='D')
-				{
-				char i;
-
-				wrk_state=wrkOFF;
-	///			lc640_write_int(EE_WRK_STAT,wrk_state);
-
-				memo_out0[0]='!';
-				memo_out0[1]=adrh;
-				memo_out0[2]=adrl;
-				memo_out0[3]='1';
-				memo_out0[4]=0x0d;
-				uart_out_adr1(memo_out0,5);
-				}
-
+			bRESET=1;
 			}
+
 
 	 	}
 	 

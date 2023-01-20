@@ -196,7 +196,7 @@ void ind_hndl(void);
 void but_drv(void);
 __irq void timer0_interrupt(void); 
 __irq void timer1_interrupt(void);
-//__irq void can1_rx_interrupt(void);
+char pal_strspn(char* in, char inchar);
  
 //-----------------------------------------------
 //Управление системой
@@ -208,6 +208,7 @@ extern char wrk_phase;
 extern signed short Isim;
 extern signed long wrk_cnt_cnt;
 extern signed short i_pov_cnt,i_pov_cnt1;
+extern char bRESET;
 
 //-----------------------------------------------
 //Контроль вакуума 
@@ -223,7 +224,7 @@ extern enum_av_kv_stat av_out_stat;
 extern signed short av_out_ind_cnt;
 
 //extern const char dumm[1000];
-extern char plazma;
+extern char plazma,plazma_a;
 
 
 //***********************************************
@@ -321,3 +322,6 @@ extern short plazma_pwm;
 //Расшифровка приходящих данных
 
 extern char strIng[20];
+extern short strIng_ptr_start, strIng_ptr_end, strIng_len, strIng_ptr_komma;
+extern short chNumber;
+extern short setData;

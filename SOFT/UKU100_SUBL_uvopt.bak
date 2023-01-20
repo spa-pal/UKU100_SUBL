@@ -118,6 +118,23 @@
         <tIfile></tIfile>
         <pMon>BIN\UL2ARM.DLL</pMon>
       </DebugOpt>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>312</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>uart1.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
@@ -307,10 +324,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>3</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>2091</TopLine>
-      <CurrentLine>2114</CurrentLine>
+      <TopLine>622</TopLine>
+      <CurrentLine>657</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -349,10 +366,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>132</ColumnNumber>
+      <ColumnNumber>16</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>307</TopLine>
-      <CurrentLine>334</CurrentLine>
+      <CurrentLine>307</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
       <FilenameWithoutPath>control.c</FilenameWithoutPath>
@@ -433,10 +450,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>117</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>209</TopLine>
-      <CurrentLine>209</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\uart1.c</PathWithFileName>
       <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
@@ -445,8 +462,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</PathWithFilename>
-    <TopLine>45</TopLine>
-    <CurrentLine>65</CurrentLine>
+    <TopLine>227</TopLine>
+    <CurrentLine>229</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -523,8 +540,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\uart1.h</PathWithFilename>
-    <TopLine>11</TopLine>
-    <CurrentLine>31</CurrentLine>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -552,13 +569,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>4</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>uart1.h</Name>
           <ColumnNumber>27</ColumnNumber>
-          <TopLine>11</TopLine>
-          <CurrentLine>31</CurrentLine>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ad7705_soft.c</Name>
@@ -574,15 +591,15 @@
         </Doc>
         <Doc>
           <Name>.\control.c</Name>
-          <ColumnNumber>132</ColumnNumber>
+          <ColumnNumber>16</ColumnNumber>
           <TopLine>307</TopLine>
-          <CurrentLine>334</CurrentLine>
+          <CurrentLine>307</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\uart1.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>209</TopLine>
-          <CurrentLine>209</CurrentLine>
+          <ColumnNumber>117</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\memo.c</Name>
@@ -604,15 +621,15 @@
         </Doc>
         <Doc>
           <Name>main.h</Name>
-          <ColumnNumber>2</ColumnNumber>
-          <TopLine>45</TopLine>
-          <CurrentLine>65</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>227</TopLine>
+          <CurrentLine>229</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>2091</TopLine>
-          <CurrentLine>2114</CurrentLine>
+          <ColumnNumber>3</ColumnNumber>
+          <TopLine>622</TopLine>
+          <CurrentLine>657</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\gran.c</Name>

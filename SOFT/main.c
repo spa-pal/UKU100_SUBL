@@ -194,12 +194,13 @@ char wrk_phase;
 signed short Isim;
 signed long wrk_cnt_cnt;
 signed short i_pov_cnt,i_pov_cnt1;
+char bRESET;
 
 // char dumm @1000;
 
 char plazma_plazma;
 char plazma_ind;
-char plazma;
+char plazma,plazma_a;
 char cnt_lcd_init;
 
 //-----------------------------------------------
@@ -294,7 +295,29 @@ short plazma_pwm;
 //**********************************************
 //Расшифровка приходящих данных
 char strIng[20];
+short strIng_ptr_start, strIng_ptr_end, strIng_len, strIng_ptr_komma;
+short chNumber;
+short setData;
+//-----------------------------------------------
+char pal_strspn(char* in, char inchar)
+{
+char inlen;
+char out=0;
+inlen=strlen(in);
 
+do 
+	{
+	out++;
+	if(out>=inlen)
+		{
+		out=255;
+		break;
+		}
+	}
+while(/*(out<inlen)&*/(in[out]!=inchar));
+
+return out;
+}
 //-----------------------------------------------
 void bitmap_hndl(void)
 {
@@ -630,8 +653,11 @@ if(ind==iMn)
 	int2lcdyx(proc_stat,1,1,0); */
 	//int2lcdyx(rxrxrx,3,5,0); 
 	//int2lcdyx(txtxtx,3,10,0);
-	//int2lcdyx(rx_wr_index1,3,15,0);
-	//int2lcdyx(plazma_pal,3,5,0);
+	//int2lcdyx(pwm_ch_max,0,5,0);
+	//int2lcdyx(pwm_I,0,10,0);
+	///int2lcdyx(plazma,0,3,0);
+	///int2lcdyx(plazma_a,0,7,0);
+	///int2lcdyx(rxrxrx,0,11,0);
 	}
 
 else if(ind==iSet)
@@ -907,6 +933,7 @@ else if(ind==iDeb)
 		int2lcdyx(ch_pending_start[6],0,14,0);
 		int2lcdyx(ch_pending_start[7],0,16,0);
 		}
+
 	else if(sub_ind1==1)
 		{
 		bgnd_par(	"&                   ",
@@ -931,6 +958,7 @@ else if(ind==iDeb)
 		char2lcdhyx(UIB1[14],2,14);
 		char2lcdhyx(UIB1[15],3,14);
 		}
+
 	else if(sub_ind1==2)
 		{
 		bgnd_par(	"%                   ",
@@ -952,9 +980,18 @@ else if(ind==iDeb)
 		char2lcdhyx(strIng[11],3,10);
 		char2lcdhyx(strIng[12],0,14);
 		char2lcdhyx(strIng[13],1,14);
-		char2lcdhyx(strIng[14],2,14);
-		char2lcdhyx(strIng[15],3,14);
+		//char2lcdhyx(strIng[14],2,14);
+		//char2lcdhyx(strIng[15],3,14);
+
+		int2lcdyx(strIng_ptr_start,0,19,0);
+		int2lcdyx(strIng_ptr_end,1,19,0);
+		int2lcdyx(strIng_len,2,19,0);
+		int2lcdyx(strIng_ptr_komma,3,19,0);	
+		int2lcdyx(chNumber,2,14,0);
+		int2lcdyx(setData,3,14,0);
+
 		}
+
 /*	int2lcdyx(adc_buff_[0],0,4,0);
 	int2lcdyx(adc_buff_[1],1,4,0);
 	int2lcdyx(adc_buff_[2],2,4,0);
@@ -965,11 +1002,12 @@ else if(ind==iDeb)
 	int2lcdyx(adc_buff_[6],2,8,0);
 	int2lcdyx(adc_buff_[7],3,8,0);*/
 	}
-
+//int2lcdyx(wrk_stat,3,1,0);
+//int2lcdyx(proc_stat,3,3,0);
 //int2lcdyx(rele_stat,0,19,0);
 //int2lcdyx(rele_stat_const[rele_stat],0,15,0);
 /*int2lcdyx(proc_stat,3,2,0);
-int2lcdyx(wrk_stat,3,0,0);
+
 int2lcdyx(wrk_period_time/1000,3,10,0);	*/
 }
 
@@ -1068,7 +1106,7 @@ if(but==butUD)
 
 if(ind==iMn)
 	{
-	if(wrk_stat==stOFF)
+	if((wrk_stat==stOFF)/*&&(proc_stat==stOFF)*//*(wrk_pause_time==0)*/)
 		{
 		if(but==butD)
 			{
@@ -1081,6 +1119,10 @@ if(ind==iMn)
 			sub_ind--;
 			gran_char(&sub_ind,0,3);
 			phase=0;
+			}
+		else if((but==butE)&&(proc_stat==stCH)&&(wrk_stat==stOFF))
+			{
+			stop_process();
 			}
 		else if(sub_ind==0)
 			{
@@ -1097,7 +1139,8 @@ if(ind==iMn)
 					{
 					if(!((!Konset[0])&&(!Konset[1])&&(!Konset[2])&&(!Konset[3])&&(!Konset[4])&&(!Konset[5])&&(!Konset[6])&&(!Konset[7])))
 						{
-						start_ALG2();
+						if(proc_stat!=stOFF)stop_process();
+						else start_ALG2();
 						}
 					}
 				}
@@ -1204,7 +1247,12 @@ if(ind==iMn)
 			index_set--;
 			gran_char(&index_set,0,1);
 			phase=0;
-			}	
+			}
+		else if(but==butE)
+			{
+			stop_process();
+			wrk_pause_time=0;
+			}				
 		}
 	else 
 		{
@@ -1927,7 +1975,7 @@ else if(ind==iSM)
 
 else if(ind==iDeb)
 	{
-	ret(50);
+	//ret(50);
 	if(but==butR)
 		{
 		sub_ind1++;
@@ -1955,7 +2003,12 @@ T1IR = 0xff;
 if(tx_wd_cnt)
 	{
 	tx_wd_cnt--;
-
+	if(!tx_wd_cnt)
+		{
+		SET_REG(PINSEL1,0,(22-16)*2,1); //Вход PV у 485
+		IO0DIR|=(1<<22);
+		IO0CLR|=(1<<22);
+		}
 	}
 
 if(++t0_cnt8>=33)
@@ -2149,7 +2202,7 @@ for(;;)
 
 		but_drv();
 		but_an();
-		watchdog_reset();
+		if(!bRESET)watchdog_reset();
 		adc_drv();
 
 		}

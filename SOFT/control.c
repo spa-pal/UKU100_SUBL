@@ -334,6 +334,7 @@ else
 			pwm_I=(signed short)(((signed long)(pwm_ch_max/2.2))+((((signed long)(pwm_ch_max/1.8))*((signed long)time))/((signed long)time_p)));
 			}
 		pwm_U=1000;
+		pwm_I=1000;
 		}
 
 	else if(wrk_stat==stTST)
@@ -355,10 +356,11 @@ void stop_process (void)
 proc_stat=stOFF;
 wrk_stat=stOFF;
 wrk_time=0;
+wrk_pause_time=0;
 }
 
 //-----------------------------------------------
-void start_chanel_num (char num)
+char start_chanel_num (char num)
 {
 if(Konset[num])
 	{
@@ -370,8 +372,11 @@ if(Konset[num])
 	wrk_ch=num;
 	ch_pending_start[num]=0;
 	}
+else return 0;
+
 proc_stat=stCH;
 wrk_stat=stON;
+return 1;
 }
 
 //-----------------------------------------------
@@ -682,6 +687,8 @@ temp_SL=(signed long)adc_buff_[0];
 temp_SL*=K_U;
 temp_SL/=2500L;
 Ui=(signed short)temp_SL;
+
+//Ui=1234;
 						  
 temp_SL=(signed long)ad7705_res1;//ad7705_buff_[0];
 /*temp_SL-=(signed long)K0_I;
@@ -690,6 +697,7 @@ temp_SL*=(signed long)K1_I;
 temp_SL/=1000L;
 Ii=(signed short)temp_SL;
 //I=(signed short)adc_buff_[1]; 
+//Ii=4567;
 
 temp_SL=(signed long)ad7705_res1;
 /*temp_SL-=(signed long)K0_I;
