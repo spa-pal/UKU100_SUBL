@@ -19,3 +19,4 @@
 .\EXE\main.o: watchdog.h
 .\EXE\main.o: ad7705_soft.h
 .\EXE\main.o: uart1.h
+.\EXE\main.o: curr_version.h

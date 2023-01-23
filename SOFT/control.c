@@ -331,10 +331,11 @@ else
 		else if(time==time_p) pwm_I=pwm_ch_max;
 		else 
 			{
-			pwm_I=(signed short)(((signed long)(pwm_ch_max/2.2))+((((signed long)(pwm_ch_max/1.8))*((signed long)time))/((signed long)time_p)));
+			//pwm_I=(signed short)(((signed long)(pwm_ch_max/2.2))+((((signed long)(pwm_ch_max/1.8))*((signed long)time))/((signed long)time_p)));
+			pwm_I=((((signed long)(pwm_ch_max))*((signed long)time))/((signed long)time_p));
 			}
 		pwm_U=1000;
-		pwm_I=1000;
+//		pwm_I=1000;
 		}
 
 	else if(wrk_stat==stTST)

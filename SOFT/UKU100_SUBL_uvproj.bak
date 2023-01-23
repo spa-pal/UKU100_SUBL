@@ -163,7 +163,7 @@
             <DriverSelection>4096</DriverSelection>
           </Flash1>
           <Flash2>BIN\UL2ARM.DLL</Flash2>
-          <Flash3>"C:\Program Files\Philips Semiconductors\Philips Flash Utility\LPC210x_ISP.exe" ("#H" ^X $D COM4: 9600 1)</Flash3>
+          <Flash3>"C:\Program Files\Philips Semiconductors\Philips Flash Utility\LPC210x_ISP.exe" ("#H" ^X $D COM3: 9600 1)</Flash3>
           <Flash4></Flash4>
         </Utilities>
         <TargetArmAds>

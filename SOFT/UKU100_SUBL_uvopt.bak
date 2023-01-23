@@ -324,10 +324,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>3</ColumnNumber>
+      <ColumnNumber>8</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>622</TopLine>
-      <CurrentLine>657</CurrentLine>
+      <TopLine>2201</TopLine>
+      <CurrentLine>2233</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -366,10 +366,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>16</ColumnNumber>
+      <ColumnNumber>98</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>307</TopLine>
-      <CurrentLine>307</CurrentLine>
+      <TopLine>313</TopLine>
+      <CurrentLine>356</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
       <FilenameWithoutPath>control.c</FilenameWithoutPath>
@@ -569,7 +569,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
           <Name>uart1.h</Name>
@@ -591,9 +591,9 @@
         </Doc>
         <Doc>
           <Name>.\control.c</Name>
-          <ColumnNumber>16</ColumnNumber>
-          <TopLine>307</TopLine>
-          <CurrentLine>307</CurrentLine>
+          <ColumnNumber>98</ColumnNumber>
+          <TopLine>313</TopLine>
+          <CurrentLine>356</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\uart1.c</Name>
@@ -627,9 +627,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>3</ColumnNumber>
-          <TopLine>622</TopLine>
-          <CurrentLine>657</CurrentLine>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>2201</TopLine>
+          <CurrentLine>2233</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\gran.c</Name>

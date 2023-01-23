@@ -7,3 +7,562 @@ E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\UKU100_SUBL.uvproj
 Project File Date:  01/15/2014
 
 <h2>Output:</h2>
+Build target 'SUBL2'
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+main.c(306): warning:  #223-D: function "strlen" declared implicitly
+main.c(353): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1135): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1143): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1151): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1311): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1316): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(2097): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(461): warning:  #177-D: variable "i" was declared but never referenced
+control.c(542): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(255): warning:  #223-D: function "start_chanel_num" declared implicitly
+uart1.c(265): warning:  #223-D: function "start_ALG2" declared implicitly
+uart1.c(243): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(245): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(302): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(314): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(331): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(343): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(361): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(373): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(390): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(402): warning:  #223-D: function "strtol" declared implicitly
+uart1.c(421): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(434): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(292): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(293): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(294): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(477): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(492): warning:  #223-D: function "strcpy" declared implicitly
+uart1.c(498): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(515): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(527): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(545): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(557): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(575): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(587): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(604): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(616): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(634): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(646): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(463): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(464): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(465): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(687): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(682): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=32428 RO-data=2392 RW-data=1732 ZI-data=3628  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 84 Warning(s).
+Build target 'SUBL2'
+User command #1: python curr_version.py
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+main.c(307): warning:  #223-D: function "strlen" declared implicitly
+main.c(354): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1136): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1144): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1152): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1312): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1317): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(2098): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(461): warning:  #177-D: variable "i" was declared but never referenced
+control.c(542): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(255): warning:  #223-D: function "start_chanel_num" declared implicitly
+uart1.c(265): warning:  #223-D: function "start_ALG2" declared implicitly
+uart1.c(243): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(245): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(302): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(314): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(331): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(343): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(361): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(373): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(390): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(402): warning:  #223-D: function "strtol" declared implicitly
+uart1.c(421): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(434): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(292): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(293): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(294): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(477): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(492): warning:  #223-D: function "strcpy" declared implicitly
+uart1.c(498): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(515): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(527): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(545): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(557): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(575): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(587): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(604): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(616): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(634): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(646): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(463): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(464): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(465): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(687): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(682): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+compiling curr_version.c...
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=32428 RO-data=2392 RW-data=1732 ZI-data=3628  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 86 Warning(s).
+Build target 'SUBL2'
+User command #1: python curr_version.py
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+main.c(307): warning:  #223-D: function "strlen" declared implicitly
+main.c(354): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1007): error:  #20: identifier "iFWabout" is undefined
+main.c(1022): warning:  #223-D: function "sprintf" declared implicitly
+main.c(1154): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1162): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1170): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1231): error:  #20: identifier "iFWabout" is undefined
+main.c(1337): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1342): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(2016): error:  #20: identifier "iFWabout" is undefined
+main.c(2132): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(461): warning:  #177-D: variable "i" was declared but never referenced
+control.c(542): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(255): warning:  #223-D: function "start_chanel_num" declared implicitly
+uart1.c(265): warning:  #223-D: function "start_ALG2" declared implicitly
+uart1.c(243): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(245): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(302): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(314): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(331): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(343): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(361): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(373): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(390): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(402): warning:  #223-D: function "strtol" declared implicitly
+uart1.c(421): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(434): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(292): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(293): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(294): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(477): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(492): warning:  #223-D: function "strcpy" declared implicitly
+uart1.c(498): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(515): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(527): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(545): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(557): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(575): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(587): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(604): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(616): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(634): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(646): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(463): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(464): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(465): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(687): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(682): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+compiling curr_version.c...
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'SUBL2'
+User command #1: python curr_version.py
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+main.c(307): warning:  #223-D: function "strlen" declared implicitly
+main.c(354): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1022): warning:  #223-D: function "sprintf" declared implicitly
+main.c(1154): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1162): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1170): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1337): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1342): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(2132): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(461): warning:  #177-D: variable "i" was declared but never referenced
+control.c(542): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(255): warning:  #223-D: function "start_chanel_num" declared implicitly
+uart1.c(265): warning:  #223-D: function "start_ALG2" declared implicitly
+uart1.c(243): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(245): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(302): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(314): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(331): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(343): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(361): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(373): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(390): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(402): warning:  #223-D: function "strtol" declared implicitly
+uart1.c(421): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(434): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(292): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(293): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(294): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(477): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(492): warning:  #223-D: function "strcpy" declared implicitly
+uart1.c(498): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(515): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(527): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(545): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(557): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(575): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(587): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(604): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(616): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(634): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(646): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(463): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(464): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(465): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(687): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(682): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+compiling curr_version.c...
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=33098 RO-data=2402 RW-data=1732 ZI-data=3628  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 87 Warning(s).
+Build target 'SUBL2'
+User command #1: python curr_version.py
+assembling Startup.s...
+compiling Timer.c...
+compiling watchdog.c...
+compiling 25lc640.c...
+compiling tlv2542.c...
+compiling pcf8563.c...
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(34): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(43): warning:  #62-D: shift count is negative
+pcf8563.c(81): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read_bytes_soft"
+pcf8563.c(101): warning:  #223-D: function "gran_char" declared implicitly
+pcf8563.c(138): warning:  #940-D: missing return statement at end of non-void function "pcf8563_read"
+pcf8563.c(155): warning:  #940-D: missing return statement at end of non-void function "pcf8563_write"
+compiling i2c.c...
+compiling ad7705_soft.c...
+compiling lcd_AGM1232_uku100.c...
+lcd_AGM1232_uku100.c(488): warning:  #61-D: integer operation result is out of range
+compiling main.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+main.c(307): warning:  #223-D: function "strlen" declared implicitly
+main.c(354): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(1022): warning:  #223-D: function "sprintf" declared implicitly
+main.c(1154): warning:  #223-D: function "start_chanel_num" declared implicitly
+main.c(1162): warning:  #223-D: function "start_ALG2" declared implicitly
+main.c(1170): warning:  #223-D: function "start_test_process" declared implicitly
+main.c(1337): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(1342): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "signed char *"
+main.c(2132): warning:  #9-D: nested comment is not allowed
+compiling memo.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+compiling common_func.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+common_func.c(337): warning:  #186-D: pointless comparison of unsigned integer with zero
+common_func.c(647): warning:  #188-D: enumerated type mixed with another type
+common_func.c(659): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling control.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+control.c(260): warning:  #186-D: pointless comparison of unsigned integer with zero
+control.c(462): warning:  #177-D: variable "i" was declared but never referenced
+control.c(543): warning:  #177-D: variable "i" was declared but never referenced
+compiling gran.c...
+compiling graphic.c...
+graphic.c(10): warning:  #550-D: variable "byte_offset" was set but never used
+graphic.c(178): warning:  #177-D: variable "num_byte" was declared but never referenced
+graphic.c(181): warning:  #177-D: variable "i" was declared but never referenced
+graphic.c(182): warning:  #177-D: variable "num_bite" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_begin" was declared but never referenced
+graphic.c(183): warning:  #177-D: variable "y_bit_begin" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_target" was declared but never referenced
+graphic.c(184): warning:  #177-D: variable "y_bit_target" was declared but never referenced
+graphic.c(185): warning:  #177-D: variable "data2" was declared but never referenced
+graphic.c(253): warning:  #177-D: variable "n" was declared but never referenced
+compiling beep.c...
+compiling simbols.c...
+compiling ret.c...
+ret.c(28): warning:  #188-D: enumerated type mixed with another type
+ret.c(55): warning:  #188-D: enumerated type mixed with another type
+compiling uart1.c...
+eeprom_map.h(35): warning:  #47-D: incompatible redefinition of macro "EE_I_SET" (declared at line 17)
+eeprom_map.h(107): warning:  #1-D: last line of file ends without a newline
+uart1.c(87): warning:  #177-D: variable "t" was declared but never referenced
+uart1.c(147): warning:  #550-D: variable "status" was set but never used
+uart1.c(255): warning:  #223-D: function "start_chanel_num" declared implicitly
+uart1.c(265): warning:  #223-D: function "start_ALG2" declared implicitly
+uart1.c(243): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(244): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(245): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(302): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(314): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(331): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(343): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(361): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(373): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(390): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(402): warning:  #223-D: function "strtol" declared implicitly
+uart1.c(421): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(434): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(292): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(293): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(294): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(477): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(492): warning:  #223-D: function "strcpy" declared implicitly
+uart1.c(498): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(515): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(527): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(545): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(557): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(575): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(587): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(604): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(616): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(634): warning:  #223-D: function "memcpy" declared implicitly
+uart1.c(646): warning:  #223-D: function "atoi" declared implicitly
+uart1.c(463): warning:  #177-D: variable "tempSS" was declared but never referenced
+uart1.c(464): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(465): warning:  #177-D: variable "s" was declared but never referenced
+uart1.c(687): warning:  #177-D: variable "i" was declared but never referenced
+uart1.c(682): warning:  #177-D: variable "temp" was declared but never referenced
+uart1.c(200): warning:  #177-D: variable "i" was declared but never referenced
+compiling curr_version.c...
+curr_version.h(6): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=32354 RO-data=2402 RW-data=1732 ZI-data=3628  
+FromELF: creating hex file...
+".\EXE\HV7705.axf" - 0 Error(s), 87 Warning(s).

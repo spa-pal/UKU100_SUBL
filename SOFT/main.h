@@ -232,7 +232,7 @@ extern char plazma,plazma_a;
 
 typedef struct  
 {
-enum {iMn,iK,iSM,iDeb,iSet,iSet_prl,iK_prl,iResurs,iProg,iProg_,iProg_prl}i;
+enum {iMn,iK,iSM,iDeb,iSet,iSet_prl,iK_prl,iResurs,iProg,iProg_,iProg_prl,iFWabout}i;
 signed char s_i;
 signed char s_i1;
 signed char s_i2;

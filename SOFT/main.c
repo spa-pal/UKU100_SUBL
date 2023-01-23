@@ -18,6 +18,7 @@
 #include "watchdog.h"
 #include "ad7705_soft.h"
 #include "uart1.h"
+#include "curr_version.h"
 
 const char*  name_of_blok="ИПС-1000-220В/12В-55А";
 
@@ -540,7 +541,8 @@ if(ind==iMn)
 		 
 		ptrs[3]=	" Программирование   ";
 		ptrs[4]=	" Установки          ";
-		ptrs[5]=	" Калибровка         ";
+		ptrs[5]=	" Версия ПО          ";
+		ptrs[6]=	" Калибровка         ";
 
 		if((sub_ind-index_set)>1)index_set=sub_ind-1;
 		else if(sub_ind<index_set)index_set=sub_ind;
@@ -1002,6 +1004,23 @@ else if(ind==iDeb)
 	int2lcdyx(adc_buff_[6],2,8,0);
 	int2lcdyx(adc_buff_[7],3,8,0);*/
 	}
+else if(ind==iFWabout)
+	{
+	bgnd_par(	" Версия             ",
+				" Сборка  0000.00.00 ",
+				#ifdef WG12232A
+				"                    ",
+				#endif
+				#ifdef WG12232L3
+				" WG12232L3          ",
+				#endif
+				"                    ");
+	int2lcdyx(BUILD_YEAR,1,12,0);
+	int2lcdyx(BUILD_MONTH,1,15,0);
+	int2lcdyx(BUILD_DAY,1,18,0);
+	
+	sprintf(&lcd_buffer[9],"%d.%d.%d",HARDVARE_VERSION,SOFT_VERSION,BUILD);
+	}
 //int2lcdyx(wrk_stat,3,1,0);
 //int2lcdyx(proc_stat,3,3,0);
 //int2lcdyx(rele_stat,0,19,0);
@@ -1111,13 +1130,13 @@ if(ind==iMn)
 		if(but==butD)
 			{
 			sub_ind++;
-			gran_char(&sub_ind,0,3);
+			gran_char(&sub_ind,0,4);
 			phase=0;
 			}
 		else if(but==butU)
 			{
 			sub_ind--;
-			gran_char(&sub_ind,0,3);
+			gran_char(&sub_ind,0,4);
 			phase=0;
 			}
 		else if((but==butE)&&(proc_stat==stCH)&&(wrk_stat==stOFF))
@@ -1206,6 +1225,13 @@ if(ind==iMn)
 				}			
 			}
 		else if(sub_ind==3)
+			{
+			if(but==butE)
+		     	{
+		     	tree_up(iFWabout,0,0,0);
+		     	}			
+			}
+		else if(sub_ind==4)
 			{
 			if(but==butE)
 				{
@@ -1986,6 +2012,15 @@ else if(ind==iDeb)
 		sub_ind1--;
 		gran_ring_char(&sub_ind,0,2);
 		}	
+	}
+else if(ind==iFWabout)
+	{
+	ret(1000);
+	if(but==butE)
+	     {
+	     tree_down(0,0);
+	     ret(0);
+	     }
 	}
 but_an_end:
 n_but=0;
