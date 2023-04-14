@@ -1,0 +1,4 @@
+/SOFT/EXE/*.d
+/SOFT/EXE/*.o
+/SOFT/EXE/*.crf
+/SOFT/*.dep

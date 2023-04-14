@@ -322,12 +322,12 @@
       <GroupNumber>4</GroupNumber>
       <FileNumber>10</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>2201</TopLine>
-      <CurrentLine>2233</CurrentLine>
+      <TopLine>909</TopLine>
+      <CurrentLine>921</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -366,10 +366,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>98</ColumnNumber>
+      <ColumnNumber>82</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>313</TopLine>
-      <CurrentLine>356</CurrentLine>
+      <TopLine>307</TopLine>
+      <CurrentLine>335</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
       <FilenameWithoutPath>control.c</FilenameWithoutPath>
@@ -450,20 +450,34 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>117</ColumnNumber>
+      <ColumnNumber>25</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>1</TopLine>
+      <CurrentLine>8</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\uart1.c</PathWithFileName>
+      <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\uart1.c</PathWithFileName>
-      <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
+      <PathWithFileName>.\curr_version.c</PathWithFileName>
+      <FilenameWithoutPath>curr_version.c</FilenameWithoutPath>
     </File>
   </Group>
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</PathWithFilename>
     <TopLine>227</TopLine>
-    <CurrentLine>229</CurrentLine>
+    <CurrentLine>235</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -569,7 +583,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>12</ActiveTab>
       <Documents>
         <Doc>
           <Name>uart1.h</Name>
@@ -591,15 +605,15 @@
         </Doc>
         <Doc>
           <Name>.\control.c</Name>
-          <ColumnNumber>98</ColumnNumber>
-          <TopLine>313</TopLine>
-          <CurrentLine>356</CurrentLine>
+          <ColumnNumber>82</ColumnNumber>
+          <TopLine>307</TopLine>
+          <CurrentLine>335</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\uart1.c</Name>
-          <ColumnNumber>117</ColumnNumber>
+          <ColumnNumber>25</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\memo.c</Name>
@@ -621,21 +635,27 @@
         </Doc>
         <Doc>
           <Name>main.h</Name>
-          <ColumnNumber>15</ColumnNumber>
+          <ColumnNumber>82</ColumnNumber>
           <TopLine>227</TopLine>
-          <CurrentLine>229</CurrentLine>
+          <CurrentLine>235</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>2201</TopLine>
-          <CurrentLine>2233</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>909</TopLine>
+          <CurrentLine>921</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\gran.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>19</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\curr_version.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
