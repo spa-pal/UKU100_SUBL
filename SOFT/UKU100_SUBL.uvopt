@@ -451,8 +451,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\lcd_AGM1232_uku100.c</PathWithFileName>
       <FilenameWithoutPath>lcd_AGM1232_uku100.c</FilenameWithoutPath>
@@ -486,8 +486,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>61</TopLine>
-      <CurrentLine>73</CurrentLine>
+      <TopLine>2169</TopLine>
+      <CurrentLine>2190</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -498,10 +498,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>45</ColumnNumber>
+      <ColumnNumber>41</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>23</TopLine>
-      <CurrentLine>35</CurrentLine>
+      <CurrentLine>30</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\memo.c</PathWithFileName>
       <FilenameWithoutPath>memo.c</FilenameWithoutPath>
@@ -528,7 +528,7 @@
       <Focus>0</Focus>
       <ColumnNumber>82</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>307</TopLine>
+      <TopLine>314</TopLine>
       <CurrentLine>335</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
@@ -610,10 +610,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <TopLine>1149</TopLine>
+      <CurrentLine>1161</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\uart1.c</PathWithFileName>
       <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
@@ -636,8 +636,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</PathWithFilename>
-    <TopLine>130</TopLine>
-    <CurrentLine>143</CurrentLine>
+    <TopLine>143</TopLine>
+    <CurrentLine>144</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -662,7 +662,7 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\eeprom_map.h</PathWithFilename>
-    <TopLine>63</TopLine>
+    <TopLine>78</TopLine>
     <CurrentLine>99</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -714,8 +714,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\uart1.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <TopLine>12</TopLine>
+    <CurrentLine>33</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -743,13 +743,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>11</ActiveTab>
       <Documents>
         <Doc>
-          <Name>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\uart1.h</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <Name>uart1.h</Name>
+          <ColumnNumber>28</ColumnNumber>
+          <TopLine>12</TopLine>
+          <CurrentLine>33</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ad7705_soft.c</Name>
@@ -758,7 +758,7 @@
           <CurrentLine>156</CurrentLine>
         </Doc>
         <Doc>
-          <Name>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\control.h</Name>
+          <Name>control.h</Name>
           <ColumnNumber>7</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
@@ -766,25 +766,25 @@
         <Doc>
           <Name>.\control.c</Name>
           <ColumnNumber>82</ColumnNumber>
-          <TopLine>307</TopLine>
+          <TopLine>314</TopLine>
           <CurrentLine>335</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\uart1.c</Name>
-          <ColumnNumber>25</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1149</TopLine>
+          <CurrentLine>1161</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\memo.c</Name>
-          <ColumnNumber>45</ColumnNumber>
+          <ColumnNumber>41</ColumnNumber>
           <TopLine>23</TopLine>
-          <CurrentLine>35</CurrentLine>
+          <CurrentLine>30</CurrentLine>
         </Doc>
         <Doc>
-          <Name>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\eeprom_map.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>63</TopLine>
+          <Name>eeprom_map.h</Name>
+          <ColumnNumber>40</ColumnNumber>
+          <TopLine>78</TopLine>
           <CurrentLine>99</CurrentLine>
         </Doc>
         <Doc>
@@ -794,16 +794,16 @@
           <CurrentLine>656</CurrentLine>
         </Doc>
         <Doc>
-          <Name>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>130</TopLine>
-          <CurrentLine>143</CurrentLine>
+          <Name>main.h</Name>
+          <ColumnNumber>32</ColumnNumber>
+          <TopLine>143</TopLine>
+          <CurrentLine>144</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>61</TopLine>
-          <CurrentLine>73</CurrentLine>
+          <TopLine>2169</TopLine>
+          <CurrentLine>2190</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\gran.c</Name>
@@ -813,6 +813,12 @@
         </Doc>
         <Doc>
           <Name>.\curr_version.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\lcd_AGM1232_uku100.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>

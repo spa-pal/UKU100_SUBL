@@ -19,6 +19,7 @@ extern const char*  name_of_blok;
 
 
 #define delay_ms(x) {long xx; xx=(unsigned long)x * 12000UL; while(xx)xx--;}
+#define delay_us(x) {long xx; xx=(unsigned long)x * 12UL; while(xx)xx--;}
 
 
 #define _7_1000_	7100
@@ -140,7 +141,7 @@ extern signed short T_POV;
 extern signed short R_DOP;
 extern signed short KOEF;
 extern signed short BAUDRATE;
-
+extern signed short MODBUS_TYPE;
 
 
 //extern char image_W;

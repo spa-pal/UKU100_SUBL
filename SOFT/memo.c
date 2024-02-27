@@ -27,6 +27,7 @@ K0_I=lc640_read_int(EE_K0_I);
 K1_I=lc640_read_int(EE_K1_I);
 K_T=lc640_read_int(EE_K_T);
 BAUDRATE=lc640_read_int(EE_BAUDRATE);
+MODBUS_TYPE=lc640_read_int(EE_MODBUS_TYPE);
 WRK_TIME=lc640_read_int(EE_WRK_TIME);
 I_SET=lc640_read_int(EE_I_SET);
 TEN_SET=lc640_read_int(EE_TEN_SET);

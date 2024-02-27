@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Fri Jan 20 15:03:31 2023
+;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Tue Apr 25 11:44:26 2023
 ;VERSION 0.2
 ;FILE 25lc640.o
 lc640_read <= USED 0
@@ -91,5 +91,6 @@ tlv_drv <= USED 0
 control_check1 <= USED 0
 getchar1 <= USED 0
 index_offset1 <= USED 0
+modbus_hold_coils_transmit <= USED 0
 uart_out1 <= USED 0
 ;FILE watchdog.o

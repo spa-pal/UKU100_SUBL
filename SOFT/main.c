@@ -71,6 +71,7 @@ signed short ADR;
 signed short R_DOP;
 signed short KOEF;
 signed short BAUDRATE;
+signed short MODBUS_TYPE;
 
 char fl_simv_num,fl_simv_len;
 char default_temp;
@@ -671,10 +672,13 @@ else if(ind==iSet)
 //	ptrs[3]=	" Аварийный ток    !А";
 	ptrs[3]=	" Количество повторов";
 	ptrs[4]=	" для алг.-тма №2  @ ";
-
-	ptrs[5]=	" Адрес           >h ";
-	ptrs[6]=	" Baudrate        Y00";
-	ptrs[7]=	" Выход              ";	  	
+	ptrs[5]=	" MODBUS       ASCII ";
+	if(MODBUS_TYPE==1)
+	ptrs[5]=	" MODBUS         RTU ";
+	ptrs[6]=	" MODBUS ADDRESS  >h ";
+	ptrs[7]=	" MODBUS BAUDRATE    "; 
+	ptrs[8]=	"                 Y00";
+	ptrs[9]=	" Выход              ";	  	 	
 
 	
 	if((sub_ind-index_set)>2)index_set=sub_ind-2;
@@ -926,14 +930,12 @@ else if(ind==iDeb)
 					"                    ",
 					"                    ",
 					"                    ");
-		int2lcdyx(ch_pending_start[0],0,2,0);
-		int2lcdyx(ch_pending_start[1],0,4,0);
-		int2lcdyx(ch_pending_start[2],0,6,0);
-		int2lcdyx(ch_pending_start[3],0,8,0);
-		int2lcdyx(ch_pending_start[4],0,10,0);
-		int2lcdyx(ch_pending_start[5],0,12,0);
-		int2lcdyx(ch_pending_start[6],0,14,0);
-		int2lcdyx(ch_pending_start[7],0,16,0);
+		int2lcdyx(modbus_rtu_plazma[0],0,3,0);
+		int2lcdyx(modbus_rtu_plazma[1],0,9,0);
+		int2lcdyx(modbus_rtu_plazma[2],1,3,0);
+		int2lcdyx(modbus_rtu_plazma[3],1,9,0);
+		int2lcdyx(modbus_rtu_plazma[4],2,3,0);
+		int2lcdyx(modbus_rtu_plazma[5],2,9,0);
 		}
 
 	else if(sub_ind1==1)
@@ -1119,7 +1121,7 @@ if(!n_but)goto but_an_end;
 if(but==butUD)
 	{
 	if(ind!=iDeb)ind=iDeb;
-	else ind=iMn;
+	else ind=iMn;			  
 
 	}
 
@@ -1736,7 +1738,7 @@ else if(ind==iSet)
 	if(but==butD)
 		{
 		sub_ind++;
-		gran_char(&sub_ind,0,7);
+		gran_char(&sub_ind,0,9);
 		if(sub_ind==2)
 			{
 			sub_ind=3;
@@ -1767,21 +1769,21 @@ else if(ind==iSet)
 			{
 			sub_ind++;
 			index_set=5;
-			}
+			} */
 		if(sub_ind==7)
 			{
 			index_set=6;
-			}
+			} 
 		if(sub_ind==8)
 			{
 			sub_ind++;
-			index_set=7;
-			} */
+			//index_set=7;
+			} 
 		}
 	else if(but==butU)
 		{
 		sub_ind--;
-		gran_char(&sub_ind,0,7);
+		gran_char(&sub_ind,0,9);
 		if(sub_ind==2)
 			{
 			sub_ind--;
@@ -1800,15 +1802,15 @@ else if(ind==iSet)
 		if(sub_ind==6)
 			{
 			sub_ind--;
-			}
+			}   */
 		if(sub_ind==8)
 			{
 			sub_ind--;
-			}  */
+			} 
 		}
 	else if(but==butD_)
 		{
-		sub_ind=7;
+		sub_ind=8;
 		}
 	else if(sub_ind==0)
 	    	{
@@ -1839,7 +1841,7 @@ else if(ind==iSet)
 	    	lc640_write_int(EE_REP_NUM_ALG_2,REP_NUM_ALG_2);
 	    	speed=1;
 		}
-
+/*
 	else if(sub_ind==5)
 	    	{	
 		if(but==butR)ADR++;
@@ -1878,7 +1880,63 @@ else if(ind==iSet)
 	else if(sub_ind==7)
 	     {
 		if(but==butE)tree_down(0,0);
+	     }*/
+	    
+
+ 	else if(sub_ind==5)
+		{
+		if((but==butR)||(but==butR_))
+			{
+			lc640_write_int(EE_MODBUS_TYPE,1);
+			}
+		else if((but==butL)||(but==butL_))
+			{
+			lc640_write_int(EE_MODBUS_TYPE,0);
+			}
+		}
+  	else if(sub_ind==6)
+	     {
+		if(but==butR)ADR++;
+	     else if(but==butR_)ADR+=10;
+	     else if(but==butL)ADR--;
+	     else if(but==butL_)ADR-=10;
+	     gran(&ADR,1,99);
+	     lc640_write_int(EE_ADR,ADR);
+	     speed=1;
+	     }
+	else if(sub_ind==7)
+		{
+		if((but==butR)||(but==butR_))
+               {
+               speed=1;
+               if(BAUDRATE==96)BAUDRATE=192;
+               else if(BAUDRATE==192)BAUDRATE=384;
+               else if(BAUDRATE==384)BAUDRATE=576;
+               else if(BAUDRATE==576)BAUDRATE=1152;
+               else BAUDRATE=96;
+               lc640_write_int(EE_BAUDRATE,BAUDRATE);
+               uart1_init();
+               }
+          else if((but==butL)||(but==butL_))
+               {
+               speed=1;
+               if(BAUDRATE==96)BAUDRATE=1152;
+               else if(BAUDRATE==192)BAUDRATE=96;
+               else if(BAUDRATE==384)BAUDRATE=192;
+               else if(BAUDRATE==576)BAUDRATE=384;
+               else BAUDRATE=576;
+               lc640_write_int(EE_BAUDRATE,BAUDRATE);
+               uart1_init();
+               }
+	     }
+
+
+	
+	else if(sub_ind==9)
+	     {
+		if(but==butE)tree_down(0,0);
 	     }	
+     		 	
      }
      
   
@@ -2114,6 +2172,19 @@ if (_485_last_cnt)
 
 		}
 	}
+if(modbus_timeout_cnt<6)
+	{
+	modbus_timeout_cnt++;
+	if(modbus_timeout_cnt>=6)
+		{
+		bMODBUS_TIMEOUT=1;
+		}
+	}
+else if (modbus_timeout_cnt>6)
+	{
+	modbus_timeout_cnt=0;
+	bMODBUS_TIMEOUT=0;
+	}
 
 VICVectAddr = 0;
 }
@@ -2217,7 +2288,15 @@ for(;;)
 	if(bRXIN1)
 		{
 		bRXIN1=0;
-		uart_in_an1();
+		if(MODBUS_TYPE==0)uart_in_an1();
+		}
+	if(bMODBUS_TIMEOUT)
+		{
+		bMODBUS_TIMEOUT=0;
+		modbus_rtu_plazma[0]++;
+		//uart_in_an1();
+		//if(MODBUS_TYPE==0)uart_in_an1();
+		if(MODBUS_TYPE==1)modbus_in();
 		}
 
 /*		ind_hndl();

@@ -29,6 +29,10 @@ extern char _485_last_cnt;
 extern char UIB[30];
 extern char tx_wd_cnt;
 extern char rxrxrx, txtxtx;
+extern char modbus_timeout_cnt;
+extern char bMODBUS_TIMEOUT;
+extern short modbus_rtu_plazma[6];
+extern char bUART1TX;
 
 void putchar1(char c);
 void uart_out1 (char num,char data0,char data1,char data2,char data3,char data4,char data5);

@@ -96,7 +96,7 @@
 #define EE_ALG_MODE				SECTOR_KOEF+178
 #define EE_AKT_CH_ALG_1		    	SECTOR_KOEF+180
 #define EE_REP_NUM_ALG_2			SECTOR_KOEF+182
-
+#define EE_MODBUS_TYPE			SECTOR_KOEF+184
 
 extern const signed short ADR_EE_I_SET[];
 extern const signed short ADR_EE_KON_SET[];

@@ -73,6 +73,152 @@
       <OPTFL>
         <tvExp>1</tvExp>
         <tvExpOptDlg>0</tvExpOptDlg>
+        <IsCurrentTarget>0</IsCurrentTarget>
+      </OPTFL>
+      <CpuCode>0</CpuCode>
+      <DllOpt>
+        <SimDllName>SARM.DLL</SimDllName>
+        <SimDllArguments>-cLPC2100</SimDllArguments>
+        <SimDlgDllName>DARMP.DLL</SimDlgDllName>
+        <SimDlgDllArguments>-pLPC21x9</SimDlgDllArguments>
+        <TargetDllName>SARM.DLL</TargetDllName>
+        <TargetDllArguments></TargetDllArguments>
+        <TargetDlgDllName>TARMP.DLL</TargetDlgDllName>
+        <TargetDlgDllArguments>-pLPC21x9</TargetDlgDllArguments>
+      </DllOpt>
+      <DebugOpt>
+        <uSim>1</uSim>
+        <uTrg>0</uTrg>
+        <sLdApp>1</sLdApp>
+        <sGomain>1</sGomain>
+        <sRbreak>1</sRbreak>
+        <sRwatch>1</sRwatch>
+        <sRmem>1</sRmem>
+        <sRfunc>1</sRfunc>
+        <sRbox>1</sRbox>
+        <tLdApp>1</tLdApp>
+        <tGomain>0</tGomain>
+        <tRbreak>1</tRbreak>
+        <tRwatch>1</tRwatch>
+        <tRmem>1</tRmem>
+        <tRfunc>0</tRfunc>
+        <tRbox>1</tRbox>
+        <sRunDeb>0</sRunDeb>
+        <sLrtime>0</sLrtime>
+        <nTsel>0</nTsel>
+        <sDll></sDll>
+        <sDllPa></sDllPa>
+        <sDlgDll></sDlgDll>
+        <sDlgPa></sDlgPa>
+        <sIfile></sIfile>
+        <tDll></tDll>
+        <tDllPa></tDllPa>
+        <tDlgDll></tDlgDll>
+        <tDlgPa></tDlgPa>
+        <tIfile></tIfile>
+        <pMon>BIN\UL2ARM.DLL</pMon>
+      </DebugOpt>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>312</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>uart1.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
+      <DebugFlag>
+        <trace>0</trace>
+        <periodic>0</periodic>
+        <aLwin>0</aLwin>
+        <aCover>0</aCover>
+        <aSer1>0</aSer1>
+        <aSer2>0</aSer2>
+        <aPa>0</aPa>
+        <viewmode>0</viewmode>
+        <vrSel>0</vrSel>
+        <aSym>0</aSym>
+        <aTbox>0</aTbox>
+        <AscS1>0</AscS1>
+        <AscS2>0</AscS2>
+        <AscS3>0</AscS3>
+        <aSer3>0</aSer3>
+        <eProf>0</eProf>
+        <aLa>0</aLa>
+        <aPa1>0</aPa1>
+        <AscS4>0</AscS4>
+        <aSer4>0</aSer4>
+        <StkLoc>0</StkLoc>
+        <TrcWin>0</TrcWin>
+        <newCpu>0</newCpu>
+        <uProt>0</uProt>
+      </DebugFlag>
+      <LintExecutable></LintExecutable>
+      <LintConfigFile></LintConfigFile>
+    </TargetOption>
+  </Target>
+
+  <Target>
+    <TargetName>SUBL2_WG12232L3</TargetName>
+    <ToolsetNumber>0x4</ToolsetNumber>
+    <ToolsetName>ARM-ADS</ToolsetName>
+    <TargetOption>
+      <CLKADS>12000000</CLKADS>
+      <OPTTT>
+        <gFlags>1</gFlags>
+        <BeepAtEnd>1</BeepAtEnd>
+        <RunSim>1</RunSim>
+        <RunTarget>0</RunTarget>
+      </OPTTT>
+      <OPTHX>
+        <HexSelection>1</HexSelection>
+        <FlashByte>65535</FlashByte>
+        <HexRangeLowAddress>0</HexRangeLowAddress>
+        <HexRangeHighAddress>0</HexRangeHighAddress>
+        <HexOffset>0</HexOffset>
+      </OPTHX>
+      <OPTLEX>
+        <PageWidth>79</PageWidth>
+        <PageLength>66</PageLength>
+        <TabStop>8</TabStop>
+        <ListingPath>.\</ListingPath>
+      </OPTLEX>
+      <ListingPage>
+        <CreateCListing>1</CreateCListing>
+        <CreateAListing>1</CreateAListing>
+        <CreateLListing>1</CreateLListing>
+        <CreateIListing>0</CreateIListing>
+        <AsmCond>1</AsmCond>
+        <AsmSymb>1</AsmSymb>
+        <AsmXref>0</AsmXref>
+        <CCond>1</CCond>
+        <CCode>0</CCode>
+        <CListInc>0</CListInc>
+        <CSymb>0</CSymb>
+        <LinkerCodeListing>0</LinkerCodeListing>
+      </ListingPage>
+      <OPTXL>
+        <LMap>1</LMap>
+        <LComments>1</LComments>
+        <LGenerateSymbols>1</LGenerateSymbols>
+        <LLibSym>1</LLibSym>
+        <LLines>1</LLines>
+        <LLocSym>1</LLocSym>
+        <LPubSym>1</LPubSym>
+        <LXref>0</LXref>
+        <LExpSel>0</LExpSel>
+      </OPTXL>
+      <OPTFL>
+        <tvExp>1</tvExp>
+        <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
       <CpuCode>0</CpuCode>
@@ -305,11 +451,25 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\lcd_AGM1232_uku100.c</PathWithFileName>
       <FilenameWithoutPath>lcd_AGM1232_uku100.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\lcd_WG12232L3.c</PathWithFileName>
+      <FilenameWithoutPath>lcd_WG12232L3.c</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -320,35 +480,35 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>10</FileNumber>
+      <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>15</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>909</TopLine>
-      <CurrentLine>921</CurrentLine>
+      <TopLine>2169</TopLine>
+      <CurrentLine>2190</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>11</FileNumber>
+      <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>45</ColumnNumber>
+      <ColumnNumber>41</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>23</TopLine>
-      <CurrentLine>35</CurrentLine>
+      <CurrentLine>30</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\memo.c</PathWithFileName>
       <FilenameWithoutPath>memo.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>12</FileNumber>
+      <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -362,13 +522,13 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>13</FileNumber>
+      <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>82</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>307</TopLine>
+      <TopLine>314</TopLine>
       <CurrentLine>335</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\control.c</PathWithFileName>
@@ -376,7 +536,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>14</FileNumber>
+      <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -390,7 +550,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>15</FileNumber>
+      <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -404,7 +564,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>16</FileNumber>
+      <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -418,7 +578,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>17</FileNumber>
+      <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -432,7 +592,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>18</FileNumber>
+      <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -446,21 +606,21 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>19</FileNumber>
+      <FileNumber>20</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <TopLine>43</TopLine>
+      <CurrentLine>64</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\uart1.c</PathWithFileName>
       <FilenameWithoutPath>uart1.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -476,8 +636,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\main.h</PathWithFilename>
-    <TopLine>227</TopLine>
-    <CurrentLine>235</CurrentLine>
+    <TopLine>143</TopLine>
+    <CurrentLine>144</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -503,7 +663,7 @@
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\eeprom_map.h</PathWithFilename>
     <TopLine>78</TopLine>
-    <CurrentLine>98</CurrentLine>
+    <CurrentLine>99</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -554,8 +714,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\UKU100_SUBL_dev\SOFT\uart1.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <TopLine>12</TopLine>
+    <CurrentLine>33</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -583,13 +743,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>12</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>uart1.h</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>28</ColumnNumber>
+          <TopLine>12</TopLine>
+          <CurrentLine>33</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ad7705_soft.c</Name>
@@ -606,26 +766,26 @@
         <Doc>
           <Name>.\control.c</Name>
           <ColumnNumber>82</ColumnNumber>
-          <TopLine>307</TopLine>
+          <TopLine>314</TopLine>
           <CurrentLine>335</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\uart1.c</Name>
-          <ColumnNumber>25</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>43</TopLine>
+          <CurrentLine>64</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\memo.c</Name>
-          <ColumnNumber>45</ColumnNumber>
+          <ColumnNumber>41</ColumnNumber>
           <TopLine>23</TopLine>
-          <CurrentLine>35</CurrentLine>
+          <CurrentLine>30</CurrentLine>
         </Doc>
         <Doc>
           <Name>eeprom_map.h</Name>
-          <ColumnNumber>42</ColumnNumber>
+          <ColumnNumber>40</ColumnNumber>
           <TopLine>78</TopLine>
-          <CurrentLine>98</CurrentLine>
+          <CurrentLine>99</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\common_func.c</Name>
@@ -635,15 +795,15 @@
         </Doc>
         <Doc>
           <Name>main.h</Name>
-          <ColumnNumber>82</ColumnNumber>
-          <TopLine>227</TopLine>
-          <CurrentLine>235</CurrentLine>
+          <ColumnNumber>32</ColumnNumber>
+          <TopLine>143</TopLine>
+          <CurrentLine>144</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>15</ColumnNumber>
-          <TopLine>909</TopLine>
-          <CurrentLine>921</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>2169</TopLine>
+          <CurrentLine>2190</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\gran.c</Name>
@@ -653,6 +813,12 @@
         </Doc>
         <Doc>
           <Name>.\curr_version.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\lcd_AGM1232_uku100.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
